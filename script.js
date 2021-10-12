@@ -41,7 +41,6 @@ floatBtn.addEventListener("touchmove", e => {
 
   floatBtn.style.left = `${touchPoints.pageX - floatBtn.clientWidth/2}px`
   floatBtn.style.top = `${touchPoints.pageY - floatBtn.clientHeight/2}px`
-
 })
 
 floatBtn.addEventListener("touchend", e => {
@@ -56,3 +55,8 @@ floatBtn.addEventListener("touchend", e => {
     floatBtn.style.top = "0"
   }
 })
+
+floatBtn.addEventListener("click", e => {
+  
+})
+

@@ -11,25 +11,39 @@ body {
   z-index: 1;
 }
 
+header {
+  text-align: center;
+}
+
 .side-section {
-  
+  border: 1px solid grey;
+  border-radius: 100%;
+  width: 20rem;
+  height: 20rem;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .2);
+  position: fixed;
+  background: white;
 }
 
 .side-section .bar {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
-  height: 200pc;
-  max-height: 400px;
-  max-width: 400px;
-  border: 1px solid black;
   z-index: 5;
-  
+  border-radius: inherit;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 1em 0;
 }
 
 .side-section .bar-item {
   padding: .5em;
+  margin: 0 auto;
+  border: 1px solid grey;
+  margin-bottom: .5em;
 }
 
 .float-btn {
