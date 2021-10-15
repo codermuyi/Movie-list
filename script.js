@@ -14,7 +14,7 @@ function createMovieCards(tvShows) {
           <p class="movie-title">${tvShow.name}</p>
           <p>Seasons: <span class="no">${tvShow.seasons}</span></p>
           <p class="status">Status: <span class="no">${tvShow.status}</span></p>
-          <button>More Info</button>
+          <button><a href="${tvShow.wikiLink}">More Info</a></button>
         </div>
         <div class="overlay"></div>
       </div>

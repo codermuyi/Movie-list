@@ -29,7 +29,7 @@ body {
   height: 100vh;
   width: 100vw;
   font-size: 20px;
-  background: #fff url('IMG'/Small-circles.png') repeat scroll;
+  background: #fff url('img/Small-circles.png') repeat scroll;
   background-size: 30%;
 }
 
@@ -287,6 +287,11 @@ h1:after, h2:after {
   color: white;
   transform: scale(1.1);
   animation: hover 1s ease-out infinite;
+}
+
+.more-info button a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .movie-card:hover {
