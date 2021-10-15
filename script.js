@@ -189,6 +189,13 @@ const tvShows = [
     imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj8O13-lXVw5S15BCPA8mC1H77kBFwxK7vXg&usqp=CAU",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Titans_(2018_TV_series)&ved=2ahUKEwjzgtLruM3zAhUQnBQKHdrbBsgQFnoECG8QAQ&usg=AOvVaw23eWjSBSzPfNquDahQEJ_B"
   },
+  {
+    name: "money heist",
+    seasons: "5",
+    status: "active",
+    imgLink: "https://m.media-amazon.com/images/M/MV5BNDJkYzY3MzMtMGFhYi00MmQ4LWJkNTgtZGNiZWZmMTMxNzdlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg",
+    wikiLink: "https://www.google.com/url?q=https://en.m.wikipedia.org/wiki/Money_Heist&sa=U&ved=2ahUKEwjdipLiy83zAhW1D2MBHZ4DAnEQFnoECAcQAg&usg=AOvVaw0Yvut4xN2n3SlJyJ3nvZa-"
+  },
 ]
 
 createMovieCards(tvShows)
