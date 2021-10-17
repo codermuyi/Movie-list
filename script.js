@@ -1,9 +1,5 @@
 const root = document.documentElement
 
-const movies = [
-  "", ""
-]
-
 function createMovieCards(tvShows) {
   let series = document.querySelector(".series")
   for (let tvShow of tvShows) {
@@ -26,6 +22,7 @@ const floatBtn = document.querySelector(".float-btn")
 const backToTop = document.querySelector(".return-btn")
 const circleBar = document.querySelector(".side-section")
 const bodyOverlay = document.querySelector("body > .overlay")
+const footer = document.querySelector("footer")
 
 floatBtn.addEventListener("touchmove", e => {
   let touchPoints = e.targetTouches[0]
@@ -74,14 +71,17 @@ backToTop.addEventListener("click", e => {
 })
 
 document.body.addEventListener("scroll", e => {
-  if (document.body.scrollTop > root.clientHeight*1.5) {
+  if (document.body.scrollTop > root.clientHeight*1.2) {
     backToTop.style.right = "1rem"
   } else {
     backToTop.style.right = "-3rem"
   }
+  if (document.body.scrollTop + document.body.clientHeight - backToTop.offsetHeight > footer.offsetTop) {
+    backToTop.style.color = "#fff"
+  } else {
+    backToTop.style.color = "#046307"
+  }
 })
-
-
 
 const tvShows = [
   {
@@ -195,6 +195,13 @@ const tvShows = [
     status: "active",
     imgLink: "https://m.media-amazon.com/images/M/MV5BNDJkYzY3MzMtMGFhYi00MmQ4LWJkNTgtZGNiZWZmMTMxNzdlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg",
     wikiLink: "https://www.google.com/url?q=https://en.m.wikipedia.org/wiki/Money_Heist&sa=U&ved=2ahUKEwjdipLiy83zAhW1D2MBHZ4DAnEQFnoECAcQAg&usg=AOvVaw0Yvut4xN2n3SlJyJ3nvZa-"
+  },
+  {
+    name: "his dark materials",
+    seasons: "2",
+    status: "active",
+    imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWPebXZB_dsV1H5OaslJW6zBTtbEbOzj5ySmQkwNWIC2i4nidD5K6_TDgv&s=10",
+    wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/His_Dark_Materials_(TV_series)&ved=2ahUKEwil5vmBgNLzAhWSAmMBHZCoAF8QFnoECBkQAQ&usg=AOvVaw05viLj0Ew2l037HZbX4jVb"
   },
 ]
 
