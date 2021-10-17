@@ -208,14 +208,14 @@ h1:after, h2:after {
   font-weight: 800;
   font-size: 1.5rem;
   transition: .3s;
+  background-color: #;
 }
 
 .main-section {
   
 }
 
-.main-section .series,
-.full-movies {
+.main-section .series {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -229,7 +229,7 @@ h1:after, h2:after {
   width: 18rem;
   height: 26rem;
   font-size: 1.2rem;
-  color: #fff;
+  color: #000;
   position: relative;
   border-radius: .3rem;
   transition: .2s ease-in;
@@ -256,6 +256,7 @@ h1:after, h2:after {
   right: 0;
   left: 0;
   font-family: 'Big Shoulders Stencil Display', cursive;
+  color: #fff;
 }
 
 .movie-card .overlay {
@@ -310,7 +311,12 @@ h1:after, h2:after {
 }
 
 footer {
-  padding: 1rem;
+  padding: 2rem 1rem;
+  background-color: #046307;
+  text-align: center;
+  color: #fff;
+  font-family: 'Big Shoulders Stencil Display', sans-serif;
+  margin-top: 1rem;
 }
 
 @keyframes hover {
@@ -323,13 +329,14 @@ footer {
 }
 
 @media (max-width: 300px) {
-  body {
-    font-size: 10px;
+  .movie-card {
+    width: 5rem;
+    height: 7rem;
   }
 }
 
 @media (min-width: 700px) {
-  .side-section {
-    
+  h1 {
+    font-size: 3rem;
   }
 }
