@@ -185,7 +185,7 @@ const tvShows = [
   {
     name: "titans",
     seasons: "3",
-    status: "airing",
+    status: "active",
     imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj8O13-lXVw5S15BCPA8mC1H77kBFwxK7vXg&usqp=CAU",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Titans_(2018_TV_series)&ved=2ahUKEwjzgtLruM3zAhUQnBQKHdrbBsgQFnoECG8QAQ&usg=AOvVaw23eWjSBSzPfNquDahQEJ_B"
   },
@@ -202,6 +202,34 @@ const tvShows = [
     status: "active",
     imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWPebXZB_dsV1H5OaslJW6zBTtbEbOzj5ySmQkwNWIC2i4nidD5K6_TDgv&s=10",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/His_Dark_Materials_(TV_series)&ved=2ahUKEwil5vmBgNLzAhWSAmMBHZCoAF8QFnoECBkQAQ&usg=AOvVaw05viLj0Ew2l037HZbX4jVb"
+  },
+  {
+    name: "cobra kai",
+    seasons: "3",
+    status: "active",
+    imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwifANkM1mg9xrIN3xgj-zicmmbsXQA3fEdsie8oaAd2_bVUGEn1dvSViD&s=10",
+    wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Cobra_Kai&ved=2ahUKEwjWiIyTqNvzAhXh8uAKHWlIB8AQFnoECCcQAQ&usg=AOvVaw1WVJE52D8LHW_xqSNzfwaP"
+  },
+  {
+    name: "Legacies",
+    seasons: "4",
+    status: "airing",
+    imgLink: "https://m.media-amazon.com/images/M/MV5BZmMwNDczMDUtNDU0Mi00MjIyLWI1NTktNzM4Yzc1MTNmZDIxXkEyXkFqcGdeQXVyOTQ0NTEzMzk@._V1_.jpg",
+    wikiLink: "https://www.google.com/url?q=https://en.m.wikipedia.org/wiki/Legacies_(TV_series)&sa=U&ved=2ahUKEwj61OGS7ODzAhW9CGMBHeKRAHAQFnoECAIQAg&usg=AOvVaw1Wm6Epb3hWVhJ_NYINiTgO"
+  },
+  {
+    name: "locke and key",
+    seasons: "2",
+    status: "active",
+    imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3CxdQS09XXhiRQ42mBKIfx85-ARuYwYVB_w&usqp=CAU",
+    wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Locke_%2526_Key_(TV_series)&ved=2ahUKEwiW6Zi4iuHzAhVlAWMBHe9sACwQFnoECEYQAQ&usg=AOvVaw0SdQbIYpAGdeTQWmLVABdD"
+  },
+  {
+    name: "alice in borderland",
+    seasons: "1",
+    status: "active",
+    imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrUf_oa-viRBK55QuSHw4P5JJHLVjL5BzHlA&usqp=CAU",
+    wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Alice_in_Borderland_(TV_series)&ved=2ahUKEwj11L7XiuHzAhVPEWMBHY-hBIsQFnoECDEQAQ&usg=AOvVaw3aH7a2Q9c_atjpuaYqK6gM"
   },
 ]
 
