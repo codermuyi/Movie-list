@@ -5,6 +5,10 @@
 Emerald green #046307
 Light grey #f5f5f5
 */
+:root {
+  --bg-color: #046307;
+  --trans-effect: .1s ease-in-out;
+}
 
 * {
   box-sizing: border-box;
@@ -29,14 +33,16 @@ body {
   height: 100vh;
   width: 100vw;
   font-size: 20px;
-  background: #fff url('img/Small-circles.png') repeat scroll;
-  background-size: 30%;
+  /*background: url('img/Small-circles.png') repeat scroll;
+  background-blend-mode: screen;
+  background-size: 30%;*/
+  
 }
 
 body > .overlay {
   z-index: 4;
   display: none;
-  background: rgba(0, 0, 0, .5);
+  /*background: rgba(0, 0, 0, .5);*/
 }
 
 .overlay {
@@ -49,16 +55,25 @@ body > .overlay {
   height: 100%;
 }
 
+.centre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 header {
   text-align: center;
   padding: 2rem 0;
   background: white;
-  border-bottom: 5px dashed #046307;
+  box-shadow: 0 0 2px 3px rgba(0,0,0,.1);
 }
 
 h1, h2 {
   position: relative;
-  color: #212121;
+}
+
+.purp {
+  color: #39375b;
 }
 
 h2 {
@@ -68,7 +83,7 @@ h2 {
 h1:before, h2:before {
   content: "";
   position: absolute;
-  background-color: #046307;
+  background-color: var(--bg-color);
   padding: 5px .5em;
   bottom: -5px;
   display: inline-block;
@@ -77,11 +92,43 @@ h1:before, h2:before {
 h1:after, h2:after {
   content: "";
   position: absolute;
-  background-color: #046307;
+  background-color: var(--bg-color);
   padding: 1px;
   padding-left: 1em;
   bottom: -5px;
   display: inline-block;
+}
+.header-text {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.header-text .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.header-text .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: var(--bg-color);
+  transform-origin: 0 50%;
+}
+
+.header-text .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.header-text .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 
 .side-section {
@@ -125,7 +172,7 @@ h1:after, h2:after {
   border-radius: 50%;
   box-shadow: 0 0 2px 2px #f5f5f5;
   transition: .3s;
-  background: #046307;
+  background: var(--bg-color);
 }
 
 .side-section .bar-item:hover {
@@ -168,7 +215,7 @@ h1:after, h2:after {
 .float-btn .dot {
   border-radius: 100%;
   padding: .2em;
-  background: #046307;
+  background: var(--bg-color);
   display: inline-block;
   margin: 2px;
   transition: .2s;
@@ -204,9 +251,9 @@ h1:after, h2:after {
   bottom: 2em;
   right: -3rem;
   z-index: 4;
-  color: #046307;
+  color: var(--bg-color);
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   transition: .3s;
   background-color: #;
 }
@@ -215,128 +262,213 @@ h1:after, h2:after {
   
 }
 
-.main-section .series {
+.series {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   perspective: 800px;
+  font-size: 5px;
+  max-width: 120rem;
 }
 
 .movie-card {
   margin: .5rem;
   text-transform: capitalize;
   overflow: hidden;
-  width: 18rem;
-  height: 26rem;
+  width: 16.8rem;
+  height: 12rem;
   font-size: 1.2rem;
   color: #000;
   position: relative;
   border-radius: .3rem;
   transition: .2s ease-in;
-  transform: rotate(5deg) scale(.9);
-  border-bottom: 1rem solid #046307;
-}
-
-
-.movie-card * {
-  transition: .1s ease-in-out;
-}
-
-.movie-card img {
-  width: 100%;
-  height: 100%;
-  /*object-fit: contain;*/
-}
-
-.movie-card .more-info {
-  text-align: center;
-  z-index: 2;
-  position: absolute;
-  top: -100%;
-  right: 0;
-  left: 0;
-  font-family: 'Big Shoulders Stencil Display', cursive;
-  color: #fff;
-}
-
-.movie-card .overlay {
-  z-index: 1;
-}
-
-.more-info .movie-title {
-  font-size: 2rem;
-}
-
-.more-info button {
-  display: block;
-  background: white;
-  color: #046307;
-  outline: none;
-  border: 0;
-  padding: .8rem;
-  font-size: 1rem;
-  margin: 0 auto;
-  border-radius: 100%;
-  height: 5rem;
-  width: 5rem;
-  transition: .2s;
-}
-
-.more-info button:hover {
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .3);
-  background: #046307;
-  color: white;
-  transform: scale(1.1);
-  animation: hover 1s ease-out infinite;
-}
-
-.more-info button a {
-  text-decoration: none;
-  color: inherit;
+  transform: rotate(1deg);
+  border-radius: 10px;
 }
 
 .movie-card:hover {
-  transform: scale(1.1);
   box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
   z-index: 3;
-  border-bottom: 0;
+}
+
+.movie-card:hover img {
+  transform: none;
 }
 
 .movie-card:hover .overlay {
   background: rgba(0, 0, 0, .5);
 }
 
-.movie-card:hover .more-info {
-  top: 25%;
+.movie-card *,
+.movie-info-container * {
+  transition: var(--trans-effect);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.5);
+}
+
+.movie-card .overlay {
+  z-index: 1;
+}
+
+.movie-card .view-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background-color: var(--bg-color);
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  color: white;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.movie-card:hover .view-btn {
+  width: 30%;
+}
+
+.movie-card:hover .view-btn:hover {
+  font-size: 1.5em;
+  border-left: 5px solid #222;
+  width: 40%;
+  color: #222;
+}
+
+.movie-info-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  transition: var(--trans-effect);
+  perspective: 800px;
+  transform-style: preserve-3d;
+}
+
+.movie-info-container .overlay {
+  background: rgba(0, 0, 0, .8);
+  z-index: 4;
+  animation: fade-in .2s ease-out 1;
+}
+
+.movie-info {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  border-radius: 10px;
+  animation: bounce 1.2s cubic-bezier(0.280, 0.840, 0.420, 1) 1;
+}
+
+.movie-info .col-1 {
+  flex: 2;
+}
+
+.movie-title {
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+.movie-info .col-2 {
+  flex: 1;
+  background: #222;
+  color: white;
+  padding: 1em;
+}
+
+.full-movie-image {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
   padding: 2rem 1rem;
-  background-color: #046307;
+  background-color: #fff;
   text-align: center;
-  color: #fff;
+  color: var(--bg-color);
   font-family: 'Big Shoulders Stencil Display', sans-serif;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  font-weight: 800;
+  box-shadow: 0 0 2px 3px rgba(0, 0, 0, .1);
+  margin-top: 5rem;
 }
 
-@keyframes hover {
+@keyframes fade-in {
   from {
-    transform: translateY(-5px) scale(1.1);
+    background: none;
+  }
+  to {
+    background: rgba(0, 0, 0, .8);
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: translateY(-200%) scale(.2) rotate(90deg);
   }
   to {
     transform: none;
   }
 }
 
-@media (max-width: 300px) {
+@keyframes bounce {
+  0% { transform: scale(0) translateY(-200%); }
+  10%  { transform: scale(1.1,.9) translateY(-7px); }
+  30%  { transform: scale(.9,1.1) translateY(-100px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1) translateY(-7px); }
+  64%  { transform: scale(1,1) translateY(0); }
+  100% { transform: scale(1,1) translateY(0); }
+}
+
+@media (min-width: 720px) {
+  .series {
+    margin: 2rem;
+  }
+  
   .movie-card {
-    width: 5rem;
-    height: 7rem;
+    margin: 1rem;
+  }
+  
+  .movie-card:hover {
+    transform: scale(.9);
+  }
+  
+  .movie-info {
+    flex-direction: row;
+    width: 40rem;
+    height: auto;
   }
 }
 
-@media (min-width: 700px) {
-  h1 {
-    font-size: 3rem;
+@media (min-width: 900px) {
+  .header-text {
+    font-size: 5rem;
+  }
+  
+  .series {
+    margin: 0 auto;
+  }
+  
+  .movie-card {
+    width: 14rem;
+    height: 10rem;
+    margin-top: 2rem;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.2);
+  }
+  
+  footer {
+    padding: 5rem 0;
   }
 }

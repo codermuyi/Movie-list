@@ -6,10 +6,14 @@
   <title>Home | My Movie List</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <header>
-    <h1>Moviemanic</h1>
+    <h1 class="header-text">
+      <span class="text-wrapper">
+        <span class="line line1"></span>
+        <span class="letters">Moviemanic</span>
+      </span>
+    </h1>
   </header>
   
   <div class="side-section">
@@ -34,14 +38,33 @@
   <div class="main-section">
     <h2>TV Shows</h2>
     <h3 style="text-align: center">NO: <span class="no-of-series"></span></h3>
-    <div class="series"></div>
+    <div class="series">
+    </div>
+  </div>
+  
+  <div class="movie-info-container centre">
+    <!--
+    <div class="movie-info">
+      <div class="col-1">
+        <img class="full-movie-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3CxdQS09XXhiRQ42mBKIfx85-ARuYwYVB_w&usqp=CAU" alt="${tvShow.name}" />
+      </div>
+      <div class="col-2">
+        <div class="movie-title">
+          Stranger Things
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    -->
   </div>
   
   <footer>
     <p>2021</p>
   </footer>
   
-  <script type="text/javascript" src="script.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="tv_shows.js"></script>
+  <script src="script.js">
   </script>
 </body>
 
