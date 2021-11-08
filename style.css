@@ -447,6 +447,10 @@ footer {
     width: 40rem;
     height: auto;
   }
+  
+  .movie-info .col-1 {
+    flex: 1;
+  }
 }
 
 @media (min-width: 900px) {
