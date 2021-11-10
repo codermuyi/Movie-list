@@ -21,7 +21,6 @@ const floatBtn = document.querySelector(".float-btn"),
       backToTop = document.querySelector(".return-btn"),
       circleBar = document.querySelector(".side-section"),
       bodyOverlay = document.querySelector("body > .overlay"),
-      infOverlay = document.querySelector(".movie-info-container > .overlay")
       footer = document.querySelector("footer"),
       mIContainer = document.querySelector(".movie-info-container");
 
@@ -38,6 +37,11 @@ function infoCard(id) {
             <div class="movie-title">
               ${tvShow.name}
             </div>
+            <div class="details centre">
+              <div>Seasons: ${tvShow.seasons}</div>
+              <div>Status: ${tvShow.status}</div>
+              <div class="more-info-btn"><a href="${tvShow.wikiLink}" >More Info</a></div>
+            </div>
           </div>
         </div>
         <div class="overlay" onclick="hideInfo()"></div>
@@ -45,13 +49,15 @@ function infoCard(id) {
       log(tvShow.name)
     }
   }
-  return content
+  return content;
 }
 
 function displayInfo(id) {
   mIContainer.classList.add("open");
   mIContainer.style.display = "flex";
   mIContainer.innerHTML = infoCard(id);
+  
+  document.querySelector(".details").style.bottom = document.querySelector(".col-2").clientHeight + "px";
 }
 
 function hideInfo() {
@@ -101,7 +107,6 @@ const circleBarControl = e => {
 
 floatBtn.addEventListener("click", circleBarControl);
 bodyOverlay.addEventListener("click", circleBarControl);
-// infOverlay.addEventListener("click", hideInfo);
 
 backToTop.addEventListener("click", e => {
   document.body.scrollTop = 0;
@@ -143,7 +148,7 @@ anime.timeline({loop: true})
     opacity: [0,1],
     easing: "easeOutExpo",
     duration: 600,
-    offset: '-=855',
+    offset: '-=755',
     delay: (el, i) => 34 * (i+1)
   }).add({
     targets: '.header-text',
