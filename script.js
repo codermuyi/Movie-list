@@ -1,6 +1,4 @@
 const root = document.documentElement;
-console.log(window.innerWidth);
-log = console.log
 
 function createMovieCards(tvShows) {
   let series = document.querySelector(".series");
@@ -46,7 +44,6 @@ function infoCard(id) {
         </div>
         <div class="overlay" onclick="hideInfo()"></div>
       `;
-      log(tvShow.name)
     }
   }
   return content;
