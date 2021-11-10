@@ -485,11 +485,31 @@ footer {
     flex: 1;
     margin: .3em;
   }
-  .movie-title:hover + .details,
+  .movie-title {
+    position: relative;
+  }
+  .movie-title::after {
+    content: "↓";
+    position: absolute;
+    top: -1.2em;
+    right: -.3em;
+    font-size: 1.2em;
+    background: white;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    border-radius: 100%;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
+    z-index: 8;
+    transition: var(--trans-effect);
+    border: 2px dashed var(--bg-color);
+  }
+  .col-2:hover .movie-title::after {
+    transform: rotate(180deg);
+  }
   .details:hover,
   .col-2:hover .details {
     height: 35%;
-    /* box-shadow: 0 20px 0 20px rgba(0, 0, 0, .5); */
   }
 }
 
