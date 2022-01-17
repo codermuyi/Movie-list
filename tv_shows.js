@@ -16,8 +16,8 @@ const tvShows = [
   },
   {
     name: "The flash",
-    seasons: "7",
-    status: "active",
+    seasons: "8",
+    status: "airing",
     imgLink: "https://www.google.com/url?q=https://m.media-amazon.com/images/M/MV5BMDIzNzYwNTctZWY4Mi00YjQ2LWI5YWYtMzdmNDgwMGI4Yzk1XkEyXkFqcGdeQXVyMTkxNjUyNQ%40%40._V1_FMjpg_UX1000_.jpg&sa=U&ved=0ahUKEwiskJST-8nzAhVCsKQKHauqDSkQ5hMIBQ&usg=AOvVaw0eIkYhqqahoBw3rFjHV2nq",
     wikiLink: "https://www.google.com/url?q=https://en.m.wikipedia.org/wiki/The_Flash_(2014_TV_series)&sa=U&ved=2ahUKEwjDwIKV-snzAhVD4eAKHb3FCOoQFnoECAoQAg&usg=AOvVaw12V1kfBC5Xr5j3ueauctIT"
   },
@@ -30,7 +30,7 @@ const tvShows = [
   },
   {
     name: "the witcher",
-    seasons: "1",
+    seasons: "2",
     status: "active",
     imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ4rei1iMNOB3-COzBocSSuVDTlZP26Oo9JA&usqp=CAU",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/The_Witcher_(TV_series)&ved=2ahUKEwiVt_PKts3zAhUC6OAKHb5qDCwQFnoECFMQAQ&usg=AOvVaw0_JgZY_IRdE0JZZDJd0VuM"
@@ -45,7 +45,7 @@ const tvShows = [
   {
     name: "chucky",
     seasons: "1",
-    status: "airing",
+    status: "active",
     imgLink: "https://www.dreadcentral.com/wp-content/uploads/2021/09/Chucky-TV-series-poster-750x938.jpg",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Chucky_(TV_series)&ved=2ahUKEwjH2vv3tM3zAhWK2hQKHbsnCUMQFnoECG4QAQ&usg=AOvVaw29HhsnTKNBMxR8nwgeMyw1"
   },
@@ -80,14 +80,14 @@ const tvShows = [
   {
     name: "mare of easttown",
     seasons: "1",
-    status: "finished",
+    status: "ended",
     imgLink: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpceOhkOM43O1-czOGBiyaz76nEO3uPh325sQUSmAxKwvQeQ_2",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Mare_of_Easttown&ved=2ahUKEwjM0drbsc3zAhWNkxQKHbX7AUUQFnoECD0QAQ&usg=AOvVaw0Iv1h53p6Q3-nN7Q5ABrsU"
   },
   {
     name: "see",
     seasons: "2",
-    status: "airing",
+    status: "active",
     imgLink: "https://static.netnaija.com/i/qEQN25YXa6W.jpg",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/See_(TV_series)&ved=2ahUKEwjX5fepqs3zAhUT8eAKHW6TCr0QFnoECDoQAQ&usg=AOvVaw0Ho7s201d5S0w28x6N8Vy3"
   },
@@ -108,7 +108,7 @@ const tvShows = [
   {
     name: "money heist",
     seasons: "5",
-    status: "active",
+    status: "ended",
     imgLink: "https://m.media-amazon.com/images/M/MV5BNDJkYzY3MzMtMGFhYi00MmQ4LWJkNTgtZGNiZWZmMTMxNzdlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg",
     wikiLink: "https://www.google.com/url?q=https://en.m.wikipedia.org/wiki/Money_Heist&sa=U&ved=2ahUKEwjdipLiy83zAhW1D2MBHZ4DAnEQFnoECAcQAg&usg=AOvVaw0Yvut4xN2n3SlJyJ3nvZa-"
   },
@@ -121,7 +121,7 @@ const tvShows = [
   },
   {
     name: "cobra kai",
-    seasons: "3",
+    seasons: "4",
     status: "active",
     imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwifANkM1mg9xrIN3xgj-zicmmbsXQA3fEdsie8oaAd2_bVUGEn1dvSViD&s=10",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Cobra_Kai&ved=2ahUKEwjWiIyTqNvzAhXh8uAKHWlIB8AQFnoECCcQAQ&usg=AOvVaw1WVJE52D8LHW_xqSNzfwaP"
@@ -147,10 +147,48 @@ const tvShows = [
     imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrUf_oa-viRBK55QuSHw4P5JJHLVjL5BzHlA&usqp=CAU",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Alice_in_Borderland_(TV_series)&ved=2ahUKEwj11L7XiuHzAhVPEWMBHY-hBIsQFnoECDEQAQ&usg=AOvVaw3aH7a2Q9c_atjpuaYqK6gM"
   },
+  {
+    name: "The Expanse",
+    seasons: "6",
+    status: "ended",
+    imgLink: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIHC4nuAAIZGtftF7rH6wqWlSzokeQoBJVnH4JLXVGfwtAi6rH",
+    wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/The_Expanse_(TV_series)&ved=2ahUKEwiqhpiY4Ln1AhVK6uAKHdPJB3IQFnoECAUQAQ&usg=AOvVaw0TQnJGRSU-n3FX_K86-how"
+  },
+  {
+    name: "Yellowjackets",
+    seasons: "1",
+    status: "active",
+    imgLink: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfOF9lh2FjffHZlth4IFAI1a9n8ec3W9ELZC2UlCRCotaZrcuk",
+    wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Yellowjackets_(TV_series)&ved=2ahUKEwj6qJ2g4Ln1AhUJA2MBHR9aCLIQFnoECE4QAQ&usg=AOvVaw0bhBCh6DL0gFCezFQfxsl6"
+  },
+
+  {
+    name: "the wheel of time",
+    seasons: "1",
+    status: "active",
+    imgLink: "https://m.media-amazon.com/images/M/MV5BYzA2Nzk5M2EtNWY4Yi00ZDY4LThkZTgtYjhhNWEyMGY0MjFjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+    wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/The_Wheel_of_Time_(TV_series)&ved=2ahUKEwjP8eiV37n1AhWOnRQKHTFSD7QQFnoECFcQAQ&usg=AOvVaw2pNKmH4VAlS_5GTerCzeup"
+  },
+
+  {
+    name: "peacemaker",
+    seasons: "1",
+    status: "airing",
+    imgLink: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStjv9fJUqFDD8ZDbZcgGK2NXUX1uEnba4rR2nwpuqxoJ0zJgiR",
+    wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Peacemaker_(TV_series)&ved=2ahUKEwjv65bY37n1AhWlA2MBHSoQDXIQFnoECEgQAQ&usg=AOvVaw24O_ZCz0z5Dck_QIVRZCiO"
+  },
+  {
+    name: "the book of boba fett",
+    seasons: "1",
+    status: "airing",
+    imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5ejCC1W9MRXeU172gTv4DeN7h_riaArplAPTb45foWGAUYTZNjMsFSu5&s=10",
+    wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/The_Book_of_Boba_Fett&ved=2ahUKEwjT4eyT4rn1AhUMmxQKHcm3B3IQFnoECHQQAQ&usg=AOvVaw1KIqD_h7Yu6Jr8m9frTiE0"
+  },
 ]
 
 const random = n => Math.round(Math.random() * n)
 const uniqueID = () => ['a', 'b', 'c', 'd', 'e'][random(4)] + random(1000);
+
 for (let tvShow of tvShows) {
   tvShow.id = uniqueID()
 }
