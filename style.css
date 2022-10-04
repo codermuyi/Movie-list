@@ -250,12 +250,11 @@ h1:after, h2:after {
   font-weight: 800;
   font-size: 1.8rem;
   transition: .3s;
-  background-color: #;
 }
 
-.main-section {
+/* .main-section {
   
-}
+} */
 
 .series {
   display: flex;
@@ -321,6 +320,7 @@ h1:after, h2:after {
   color: white;
   overflow: hidden;
   z-index: 2;
+  cursor: pointer;
 }
 
 .movie-card:hover .view-btn {
