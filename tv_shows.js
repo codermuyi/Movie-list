@@ -2,14 +2,14 @@
 const tvShows = [
   {
     name: "stranger things",
-    seasons: "3",
+    seasons: "4",
     status: "active",
     imgLink: "https://t3.gstatic.com/images?q=tbn:ANd9GcQzBPeJBL1nrbE44py9eA0PFWzRQjQlW4NwjIBKuOMjVi4ou8UR",
     wikiLink: "https://www.google.com/url?q=https://en.m.wikipedia.org/wiki/Stranger_Things&sa=U&ved=2ahUKEwjv1uyhtsfzAhUU5uAKHeMCB00QFnoECAUQAg&usg=AOvVaw0Z_sw39TVLMn6e-BBfB6mC",
   },
   {
     name: "the boys",
-    seasons: "2",
+    seasons: "3",
     status: "active",
     imgLink: "https://www.google.com/url?q=https://m.media-amazon.com/images/M/MV5BNGEyOGJiNWEtMTgwMi00ODU4LTlkMjItZWI4NjFmMzgxZGY2XkEyXkFqcGdeQXVyNjcyNjcyMzQ%40._V1_FMjpg_UX1000_.jpg&sa=U&ved=0ahUKEwi-qpSc-cnzAhVNzaQKHcVADRoQ5hMIBQ&usg=AOvVaw1kTRVpuY7jm9u98jyxdKPQ",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/The_Boys_(2019_TV_series)&ved=2ahUKEwjmwqvWt83zAhVD4eAKHeIICeIQFnoFCJEBEAE&usg=AOvVaw2Iw5vWcailwSjJc2lymBWT"
@@ -17,7 +17,7 @@ const tvShows = [
   {
     name: "The flash",
     seasons: "8",
-    status: "airing",
+    status: "active",
     imgLink: "https://www.google.com/url?q=https://m.media-amazon.com/images/M/MV5BMDIzNzYwNTctZWY4Mi00YjQ2LWI5YWYtMzdmNDgwMGI4Yzk1XkEyXkFqcGdeQXVyMTkxNjUyNQ%40%40._V1_FMjpg_UX1000_.jpg&sa=U&ved=0ahUKEwiskJST-8nzAhVCsKQKHauqDSkQ5hMIBQ&usg=AOvVaw0eIkYhqqahoBw3rFjHV2nq",
     wikiLink: "https://www.google.com/url?q=https://en.m.wikipedia.org/wiki/The_Flash_(2014_TV_series)&sa=U&ved=2ahUKEwjDwIKV-snzAhVD4eAKHb3FCOoQFnoECAoQAg&usg=AOvVaw12V1kfBC5Xr5j3ueauctIT"
   },
@@ -38,7 +38,7 @@ const tvShows = [
   {
     name: "the equalizer",
     seasons: "2",
-    status: "airing",
+    status: "active",
     imgLink: "https://m.media-amazon.com/images/M/MV5BYmY3MTgwYWUtMTc2NC00ZDdmLWIyNDAtOGJkNTQyZjM0NDA5XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/The_Equalizer_(2021_TV_series)&ved=2ahUKEwifppKUt83zAhWMsBQKHXfVDd4QFnoECDgQAQ&usg=AOvVaw0wYeWu7TBYWLp3aaNiFtZv"
   },
@@ -51,7 +51,7 @@ const tvShows = [
   },
   {
     name: "young sheldon",
-    seasons: "5",
+    seasons: "6",
     status: "airing",
     imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-OpPJKb9npvsHvF8iWPSZs3AL2QOU6hJV_A&usqp=CAU",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Young_Sheldon&ved=2ahUKEwiEl-TxtM3zAhVC0uAKHWa7BoEQFnoECHQQAQ&usg=AOvVaw2H-d9at71TA1vCOeNyrUK0&cshid=1634335315403"
@@ -66,14 +66,14 @@ const tvShows = [
   {
     name: "one of us is lying",
     seasons: "1",
-    status: "airing",
+    status: "active",
     imgLink: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1632078539l/58679358.jpg",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/One_of_Us_Is_Lying_(TV_series)&ved=2ahUKEwiE3-Shs83zAhVFcBQKHda-AlUQFnoECEIQAQ&usg=AOvVaw0Rb0gN1wKo_x_6pFIZ1Em-"
   },
   {
     name: "squid game",
     seasons: "1",
-    status: "TBA",
+    status: "active",
     imgLink: "https://i.pinimg.com/736x/c5/1b/ef/c51bef377278466e6419a8e91d136dfb.jpg",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Squid_Game&ved=2ahUKEwj29YfAss3zAhVs7OAKHfjkD48QFnoECDIQAQ&usg=AOvVaw06tnqIsmH3ow2NmQ48i9zo&cshid=1634334877542"
   },
@@ -86,14 +86,14 @@ const tvShows = [
   },
   {
     name: "see",
-    seasons: "2",
-    status: "active",
+    seasons: "3",
+    status: "ended",
     imgLink: "https://static.netnaija.com/i/qEQN25YXa6W.jpg",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/See_(TV_series)&ved=2ahUKEwjX5fepqs3zAhUT8eAKHW6TCr0QFnoECDoQAQ&usg=AOvVaw0Ho7s201d5S0w28x6N8Vy3"
   },
   {
     name: "Stargirl",
-    seasons: "2",
+    seasons: "3",
     status: "airing",
     imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV3xp4e9LMjZU8NbaANBeWiik7GKQW5qGEB1Fb_IVA8XBFShZSby3chLCE&s=10",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Stargirl_(TV_series)&ved=2ahUKEwjIweqwuM3zAhUMnxQKHUcvARQQFnoECDgQAQ&usg=AOvVaw18RIIxO7TwG8UdJLLEaz5Y&cshid=1634336157384"
@@ -121,7 +121,7 @@ const tvShows = [
   },
   {
     name: "cobra kai",
-    seasons: "4",
+    seasons: "5",
     status: "active",
     imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwifANkM1mg9xrIN3xgj-zicmmbsXQA3fEdsie8oaAd2_bVUGEn1dvSViD&s=10",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Cobra_Kai&ved=2ahUKEwjWiIyTqNvzAhXh8uAKHWlIB8AQFnoECCcQAQ&usg=AOvVaw1WVJE52D8LHW_xqSNzfwaP"
@@ -129,14 +129,14 @@ const tvShows = [
   {
     name: "Legacies",
     seasons: "4",
-    status: "airing",
+    status: "ended",
     imgLink: "https://m.media-amazon.com/images/M/MV5BZmMwNDczMDUtNDU0Mi00MjIyLWI1NTktNzM4Yzc1MTNmZDIxXkEyXkFqcGdeQXVyOTQ0NTEzMzk@._V1_.jpg",
     wikiLink: "https://www.google.com/url?q=https://en.m.wikipedia.org/wiki/Legacies_(TV_series)&sa=U&ved=2ahUKEwj61OGS7ODzAhW9CGMBHeKRAHAQFnoECAIQAg&usg=AOvVaw1Wm6Epb3hWVhJ_NYINiTgO"
   },
   {
     name: "locke and key",
-    seasons: "2",
-    status: "active",
+    seasons: "3",
+    status: "ended",
     imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3CxdQS09XXhiRQ42mBKIfx85-ARuYwYVB_w&usqp=CAU",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Locke_%2526_Key_(TV_series)&ved=2ahUKEwiW6Zi4iuHzAhVlAWMBHe9sACwQFnoECEYQAQ&usg=AOvVaw0SdQbIYpAGdeTQWmLVABdD"
   },
@@ -173,16 +173,51 @@ const tvShows = [
   {
     name: "peacemaker",
     seasons: "1",
-    status: "airing",
+    status: "active",
     imgLink: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStjv9fJUqFDD8ZDbZcgGK2NXUX1uEnba4rR2nwpuqxoJ0zJgiR",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/Peacemaker_(TV_series)&ved=2ahUKEwjv65bY37n1AhWlA2MBHSoQDXIQFnoECEgQAQ&usg=AOvVaw24O_ZCz0z5Dck_QIVRZCiO"
   },
   {
     name: "the book of boba fett",
     seasons: "1",
-    status: "airing",
+    status: "TBA",
     imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5ejCC1W9MRXeU172gTv4DeN7h_riaArplAPTb45foWGAUYTZNjMsFSu5&s=10",
     wikiLink: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://en.m.wikipedia.org/wiki/The_Book_of_Boba_Fett&ved=2ahUKEwjT4eyT4rn1AhUMmxQKHcm3B3IQFnoECHQQAQ&usg=AOvVaw1KIqD_h7Yu6Jr8m9frTiE0"
+  },
+  {
+    name: "ted lasso",
+    seasons: "2",
+    status: "active",
+    imgLink: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-AQWTiuRhTY6uHj13DLe-37jddf4ZOgNs99sciRZcpMMXWryJ",
+    wikiLink: "https://en.wikipedia.org/wiki/Ted_Lasso"
+  },
+  {
+    name: "reacher",
+    seasons: "1",
+    status: "active",
+    imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM88WOtwaWcilhTKO4ZxT5fZijDlVuWqTZ2JG_mGhIZCYmIYB9",
+    wikiLink: "https://en.wikipedia.org/wiki/Reacher_(TV_series)"
+  },
+  {
+    name: "inventing anna",
+    seasons: "1",
+    status: "ended",
+    imgLink: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxIf-uuDu5GajlAvhHYJzjW_LhcYi-cmMbOCBX47IcTfLg2Dav",
+    wikiLink: "https://en.wikipedia.org/wiki/Inventing_Anna"
+  },
+  {
+    name: "severance",
+    seasons: "1",
+    status: "active",
+    imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA0ZlBWHVfpRi2iWRCh_t2f6viHwyKMAfJB3paBHmsL78_b06T",
+    wikiLink: "https://en.wikipedia.org/wiki/Severance_(TV_series)"
+  },
+  {
+    name: "all of us are dead",
+    seasons: "1",
+    status: "active",
+    imgLink: "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/All_of_Us_Are_Dead.jpeg/250px-All_of_Us_Are_Dead.jpeg",
+    wikiLink: "https://en.wikipedia.org/wiki/All_of_Us_Are_Dead"
   },
 ]
 
